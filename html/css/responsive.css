@@ -1,0 +1,407 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (min-width:1200px) and (max-width: 1399px){
+    
+}
+@media only screen and (min-width:1400px) and (max-width: 1600px){
+    
+
+	
+}
+@media only screen and (max-width:1366px){
+	body{
+		font-size: 14px;
+	}
+	#scroll-down{
+		left: 60px;
+	}
+	.lead{
+		font-size: 20px;
+	}
+	.section-heading{
+		margin-bottom: 30px;
+	}
+	.section-heading h2{
+		font-size: 35px;
+		margin-bottom: 15px;
+	}
+	.stat-boxes{
+		margin: 30px 0 80px;
+	}
+	.stat-boxes .stat-box{
+		margin: 10px;
+	}
+	.stat-boxes .stat-box:before{
+		width: 15px;
+	}
+	.stat-boxes .stat-box:after{
+		width: 15px;
+	}
+	.stat-boxes .stat-box.opened{
+		width: 220px;
+	}
+	.stat-boxes .stat-box .st-count{
+		font-size: 30px;
+	}
+	.team-blocks .team-block{
+		margin: 50px 0 0;
+	}
+	.team-blocks .col:before{
+		top: 5px;
+	}
+	.techno-blocks .techno-block{
+		margin: 0 0 15px;
+	}
+	.serve-list{
+		margin-bottom: 30px;
+	}
+	.service-blocks .service-block ul{
+		padding: 20px 30px;
+	}
+	.project-slider .project-thumb{
+		width: 350px;
+		height: 200px;
+	}
+	.project-slider .project-details{
+		width: 350px;
+		height: 200px;
+		padding: 20px;
+		font-size: 12px;
+		line-height: 19px;
+	}
+	.project-details .project-title{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.projects-wrap .go-portfolio{
+		font-size: 12px;
+		padding: 5px 10px;
+		bottom: -10px;
+	}
+	.techno-block .techno-title{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width:1200px){
+	
+
+}
+@media only screen and (max-width:1024px){
+	html,
+	body{
+		overflow: auto;
+	}
+	.perloader span{
+		width: 100%;
+	}
+	.perloader.uipl-loaded span:nth-child(2),
+	.perloader.uipl-loaded span:nth-child(4){
+		display: none;
+	}
+	.parallax-container{
+		display: none;
+		visibility: hidden;
+	}
+	#uipl-main{
+		padding: 0;
+	}
+	.uipl-frame{
+		position: relative;
+	}
+	.uipl-frame .frame-left,
+	.uipl-frame .frame-right,
+	.uipl-frame .frame-bottom{
+		display: none;
+	}
+	.frame-link{
+		display: none;
+	}
+	.seo-box{
+		position: relative;
+		border: 5px solid #06d6a0;
+		right: auto;
+    	margin: 40px 0 0;
+    	height: auto;
+	}
+	.seo-box svg{
+		display: none;
+	}
+	.seo-box ul{
+		padding: 20px;
+	}
+	.stat-boxes .stat-box{
+		width: 260px;
+	}
+	.stat-boxes .stat-box .bx-inner{
+		opacity: 1;
+	}
+
+	.mobile-footer{
+		position: fixed;
+	    height: 50px;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    background: #06d6a0;
+	    text-align: center;
+	    z-index: 999;
+	    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+	}
+	.mobile-footer > ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.mobile-footer > ul > li{
+		width: 20%;
+		height: 50px;
+		float: left;
+		position: relative;
+	}
+	.mobile-footer > ul > li:nth-child(1):after,
+	.mobile-footer > ul > li:nth-child(4):after{
+		width: 1px;
+		height: 20px;
+		background: #fff;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -10px;
+		content: "";
+		opacity: 0.4;
+	}
+	.mobile-footer a{
+		display: block;
+		height: 100%;
+		color: #fff !important;
+		text-decoration: none !important;
+		padding-top: 8px;
+	}
+	.mobile-footer .icon-holder{
+		display: block;
+		line-height: 0;
+		font-size: 20px;
+		text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+	}
+	.mobile-footer .icon-txt{
+		font-size: 9px;
+		text-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+		text-transform: uppercase;
+		font-weight: 600;
+		line-height: 15px;
+		display: block;
+	}
+
+	.go-top-mob{
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 20px;
+		margin: auto;
+		background: url(../images/up-arrow-mobile.svg) no-repeat center center #1e9280;
+		background-size: 20px auto;
+		border-radius: 100%;
+		box-shadow: 0 0 27px rgba(0,0,0,0.4);
+	}
+	.go-top-mob:before{
+		position: absolute;
+	    left: -7px;
+	    right: -7px;
+	    top: -7px;
+	    bottom: -7px;
+	    background: rgba(255, 255, 255, 0.35);
+	    border-radius: 100%;
+	    content: "";
+	    z-index: -1;
+	    border: 1px solid rgba(255,255,255,0.3);
+	}
+	.go-top-mob:hover,
+	.go-top-mob:focus{
+		background-color: #053c33;
+	}
+}
+
+@media only screen and (max-width:767px){
+	#scroll-down{
+		display: none;
+	}
+	.welcome-typography .h1{
+		font-size: 50px;
+		line-height: 40px;
+	}
+	.welcome-typography .sub-typo{
+		font-size: 12px;
+	}
+	.welcome-typography .h2{
+	    font-size: 24px;
+	    line-height: 20px;
+	    letter-spacing: 5px;
+	}
+	.welcome-typography p{
+		font-size: 18px;
+	}
+	.welcome-screen .wrap-cell{
+		padding-top: 90px;
+	}
+	.seo-box ul li a{
+		padding: 12px 0;
+	}
+	.stat-boxes{
+		margin-bottom: 30px;
+	}
+	.team-blocks .team-block {
+	    margin: 70px 0 0;
+	    text-align: center;
+	}
+	.team-blocks .col:before {
+	    top: -40px;
+	    left: 0;
+	    right: 0;
+	    text-align: center;
+	}
+	.techno-blocks .techno-block {
+	    margin: 0 0 25px;
+	    text-align: center;
+	}
+	.project-slider{
+		white-space: normal;
+		margin-top: 30px;
+	}
+	.project-slider .project-thumb{
+		width: 100%;
+		max-width: 350px;
+	}
+	.project-slider .project-details{
+		width: 100%;
+		max-width: 350px;
+		margin: 0;
+		height: auto;
+		top: 0;
+	}
+
+}
+
+
+@media only screen and (max-width:480px){
+	.wrap-cell{
+		padding: 30px;
+	}
+	.toggle-nav{
+		margin-left: 30px;
+	}
+	.site-header .navbar-brand{
+		margin: 0;
+		left: auto;
+		right: 15px;
+	}
+	.nav-menu{
+		width: 100%;
+		padding-bottom: 110px;
+	}
+	.nav-menu .nav-inner{
+		padding: 0 30px 30px;
+	}
+	.nav-menu ul.main-menu{
+		font-size: 18px;
+	}
+	.nav-menu ul.list-menu{
+		font-size: 16px;
+		margin: 20px 0 0;
+	}
+	.nav-social{
+		padding: 30px;
+	}
+	.nav-social h3{
+		font-size: 18px;
+	}
+	.serve-list ul li{
+		display: block;
+	    margin: 0 auto 50px;
+	    text-align: center;
+	}
+	.serve-list .icon-holder{
+		display: inline-block;
+		float: none;
+	}
+	.sr-divider {
+		width: 20px;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	    transform: rotate(90deg);
+	    bottom: -60px;
+	}
+	.service-blocks .service-block{
+		margin-bottom: 15px;
+	}
+
+}
+@media only screen and (max-width:360px){
+	.wrap-cell{
+		padding: 25px 15px;
+	}
+	.toggle-nav{
+		margin-left: 15px;
+	}
+	.site-header .navbar-brand{
+		width: 200px;
+		top: 3px;
+		right: 0;
+	}
+	.section-heading h2{
+		font-size: 30px;
+	}
+	.lead{
+		font-size: 18px;
+	}
+	.seo-box{
+		width: auto;
+		border-width: 3px;
+	}
+	.seo-box ul li h1, 
+	.seo-box ul li h2, 
+	.seo-box ul li h3{
+		font-size: 14px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
