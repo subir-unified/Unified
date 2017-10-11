@@ -5,9 +5,12 @@
     
 }
 @media only screen and (min-width:1400px) and (max-width: 1600px){
-    
-
-	
+	.stat-boxes .stat-box .st-count{
+		font-size: 30px;
+	}
+	.stat-boxes .stat-box.opened {
+	    width: 250px;
+	}
 }
 @media only screen and (max-width:1366px){
 	body{
@@ -40,9 +43,6 @@
 	}
 	.stat-boxes .stat-box.opened{
 		width: 220px;
-	}
-	.stat-boxes .stat-box .st-count{
-		font-size: 30px;
 	}
 	.team-blocks .team-block{
 		margin: 50px 0 0;
@@ -137,91 +137,7 @@
 		opacity: 1;
 	}
 
-	.mobile-footer{
-		position: fixed;
-	    height: 50px;
-	    left: 0;
-	    right: 0;
-	    bottom: 0;
-	    background: #06d6a0;
-	    text-align: center;
-	    z-index: 999;
-	    box-shadow: 0 0 30px rgba(0,0,0,0.2);
-	}
-	.mobile-footer > ul{
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	.mobile-footer > ul > li{
-		width: 20%;
-		height: 50px;
-		float: left;
-		position: relative;
-	}
-	.mobile-footer > ul > li:nth-child(1):after,
-	.mobile-footer > ul > li:nth-child(4):after{
-		width: 1px;
-		height: 20px;
-		background: #fff;
-		position: absolute;
-		right: 0;
-		top: 50%;
-		margin-top: -10px;
-		content: "";
-		opacity: 0.4;
-	}
-	.mobile-footer a{
-		display: block;
-		height: 100%;
-		color: #fff !important;
-		text-decoration: none !important;
-		padding-top: 8px;
-	}
-	.mobile-footer .icon-holder{
-		display: block;
-		line-height: 0;
-		font-size: 20px;
-		text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
-	}
-	.mobile-footer .icon-txt{
-		font-size: 9px;
-		text-shadow: 0px 0px 1px rgba(0,0,0,0.3);
-		text-transform: uppercase;
-		font-weight: 600;
-		line-height: 15px;
-		display: block;
-	}
-
-	.go-top-mob{
-		width: 40px;
-		height: 40px;
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 20px;
-		margin: auto;
-		background: url(../images/up-arrow-mobile.svg) no-repeat center center #1e9280;
-		background-size: 20px auto;
-		border-radius: 100%;
-		box-shadow: 0 0 27px rgba(0,0,0,0.4);
-	}
-	.go-top-mob:before{
-		position: absolute;
-	    left: -7px;
-	    right: -7px;
-	    top: -7px;
-	    bottom: -7px;
-	    background: rgba(255, 255, 255, 0.35);
-	    border-radius: 100%;
-	    content: "";
-	    z-index: -1;
-	    border: 1px solid rgba(255,255,255,0.3);
-	}
-	.go-top-mob:hover,
-	.go-top-mob:focus{
-		background-color: #053c33;
-	}
+	
 }
 
 @media only screen and (max-width:767px){

@@ -1,20 +1,13 @@
 $(window).on('load',function(){
-  // WOW
-  wow = new WOW({
-        boxClass: 'wow',
-        animateClass: 'animated',
-        offset: 0,
-        mobile: false,
-        live: true
-      })
+
   $('body').removeClass('uipl-loading');
   setTimeout(function(){
-    $('.perloader').addClass('uipl-loaded');
+    $('.preloader').addClass('uipl-loaded');
       setTimeout(function(){
-      $('.perloader').fadeOut('slow');
+      $('.preloader').fadeOut('slow');
       $('.seo-box').addClass('active');
       setTimeout(function(){
-        wow.init();
+        AOS.init();
         $('.seo-box ul li').each(function(){
           $(this).addClass('fadeInLeft');
         });
@@ -28,13 +21,6 @@ $(window).on('load',function(){
   
 });
 $(function(){
-
-  // Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-
-  
-  
-  
 
   // Parallax Movement			
 	var $parallaxContainer = $(".parallax-container");
@@ -89,7 +75,7 @@ $(function(){
 
 });
 
-function homePagePilling(){
+function homePagePilling00(){
   $('#uipl-main').pagepiling({
     navigation: false,
     scrollingSpeed: 100,
@@ -133,6 +119,50 @@ function homePagePilling(){
     }
   });
 }
+
+function homePagePilling(){
+  $('#uipl-main').fullpage({
+    navigation: false,
+    sectionsColor: ['#184486', '#fec955', '#3bb6a3', '#cf6847', '#181818', '#f4f4f4', '#ffffff'],
+    //verticalCentered: true,
+    onLeave: function(index, nextIndex, direction){
+      $('.stat-boxes .stat-box').removeClass('opened dwn');
+      $('#scroll-down').removeClass('visible-elem');
+      // if(index == 6){
+      //   $('body').removeClass('visible-footer');
+      // }
+      if(index == 7){
+        $('body').removeClass('visible-footer');
+        //$('.uipl-projects').css({"transform": "translate3d(0px, 0px, 0px)"});
+      }
+    },
+    afterLoad: function(anchorLink, index){
+      setTimeout(function(){
+        $('#scroll-down').addClass('visible-elem');
+      },2000);
+      //using index
+      if(index == 2){
+        setTimeout(function(){
+          $('.stat-boxes .stat-box').addClass('opened');
+          setTimeout(function(){
+            $('.stat-boxes .stat-box:nth-child(even)').addClass('dwn');
+          },500);
+        },300);
+      }
+      if(index == 7){
+        $('body').addClass('visible-footer');
+        //$('.uipl-projects').css({"transform": "translate3d(0px, -200px, 0px)"});
+      }
+
+      //using anchorLink
+      if(anchorLink == 'secondPage'){
+        //alert("Section 2 ended loading");
+      }
+    }
+  });
+}
+
+
 
 function contactPagePilling(){
   $('#uipl-contact').pagepiling({

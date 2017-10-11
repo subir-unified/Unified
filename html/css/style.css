@@ -2,8 +2,8 @@
 /* CSS Document */
 
 @import url('font-awesome.min.css');
-@import url('jquery.pagepiling.css');
-@import url('animate.min.css');
+@import url('jquery.fullPage.css');
+@import url('aos.css');
 @import url('swiper.min.css');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
@@ -30,10 +30,7 @@ a{
 	border: none;
 	padding: 10px 15px;
 }
-.wow{
-	visibility: hidden;
-}
-.perloader{
+.preloader{
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -41,42 +38,42 @@ a{
 	bottom: 0;
 	z-index: 99999;
 }
-.perloader span{
+.preloader span{
 	position: absolute;
 	width: 50%;
 	height: 50vh;
 	background: #fff;
 	transition: all cubic-bezier(.86,0,.07,1) 1s;
 }
-.perloader span:nth-child(1){
+.preloader span:nth-child(1){
 	left: 0;
 	top: 0;
 }
-.perloader span:nth-child(2){
+.preloader span:nth-child(2){
 	right: 0;
 	top: 0;
 }
-.perloader span:nth-child(3){
+.preloader span:nth-child(3){
 	right: 0;
 	bottom: 0;
 }
-.perloader span:nth-child(4){
+.preloader span:nth-child(4){
 	left: 0;
 	bottom: 0;
 }
-.perloader.uipl-loaded span:nth-child(1){
+.preloader.uipl-loaded span:nth-child(1){
 	width: 100%;
 	height: 50px;
 }
-.perloader.uipl-loaded span:nth-child(2){
+.preloader.uipl-loaded span:nth-child(2){
 	width: 50px;
 	height: 100%;
 }
-.perloader.uipl-loaded span:nth-child(3){
+.preloader.uipl-loaded span:nth-child(3){
 	width: 100%;
 	height: 50px;
 }
-.perloader.uipl-loaded span:nth-child(4){
+.preloader.uipl-loaded span:nth-child(4){
 	width: 50px;
 	height: 100%;
 }
@@ -98,7 +95,7 @@ a{
 	z-index: 1000;
 }
 .site-header .navbar-brand{
-	padding: 10px;
+	padding: .5rem;
 	position: absolute;
 	width: 244px;
 	left: 0;
@@ -377,19 +374,11 @@ a{
 .txt-yellow{
 	color: #ffff00;
 }
-.inner-wrap-table{
-	display: table;
-	width: 100%;
-	height: 100%;
+
+.wrap-cell{
 	position: relative;
 	z-index: 2;
-}
-.wrap-cell{
-	display: table-cell;
-	width: 100%;
-	height: 100%;
 	padding: 50px;
-	vertical-align: middle;
 }
 #scroll-down {
 	position: absolute;
@@ -1596,14 +1585,7 @@ a{
 
 
 .uipl-footer{
-	max-height: 200px;
-	top: auto;
-	bottom: 0;
+
 }
-.uipl-footer .pp-tableCell{
-	padding: 0;
-}
-.uipl-footer .wrap-cell{
-	padding: 0;
-}
+
 
